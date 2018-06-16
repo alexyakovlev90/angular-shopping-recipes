@@ -18,12 +18,12 @@ const appRoutes: Routes = [
       {path: ':id/edit', component: RecipeEditComponent}
     ]
   },
-  // {
-  //   path: 'shopping', component: ShoppingListComponent, children: [
-  //     {path: ':id', component: ShoppingListComponent},
-  //     {path: ':id/edit', component: ShoppingEditComponent}
-  //   ]
-  // },
+  {
+    path: 'shopping', component: ShoppingListComponent, children: [
+      {path: ':id', component: ShoppingListComponent},
+      {path: ':id/edit', component: ShoppingEditComponent}
+    ]
+  },
   // { path: '**', redirectTo: '/recipes' }
 ];
 
